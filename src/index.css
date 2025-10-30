@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Scrollbar track with border */
+::-webkit-scrollbar {
+  width: 12px;              /* Set scrollbar width */
+  height: 12px;             /* For horizontal scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #fff;
+  border: 2px solid #000;   /* Black border around track */
+  border-radius: 8px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #fff;         /* White thumb */
+  border: 2px solid #000;   /* Black border on thumb */
+  border-radius: 8px;
+}
+
+/* Optionally, on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eee;
+  border-color: #222;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #000; /* thumb color track color */
+}
