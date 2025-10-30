@@ -1,4 +1,5 @@
 import { FaFilePdf, FaGithub } from 'react-icons/fa';
+
 const Navbar = () => (
     <nav className="fixed top-0 left-0 w-full flex items-center justify-between border-b-2 border-black p-5 bg-white z-20">
         <span className="font-bold text-xl">Lucky Chauhan</span>
@@ -6,7 +7,7 @@ const Navbar = () => (
             <li>
                 <a
                     className="border px-3 py-1 flex items-center gap-2"
-                    href="/resume.pdf"
+                    href="https://ik.imagekit.io/gaxmekqtag/Resume%20File/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -23,7 +24,6 @@ const Navbar = () => (
                     <FaGithub /> GitHub
                 </a>
             </li>
-
         </ul>
     </nav>
 );
