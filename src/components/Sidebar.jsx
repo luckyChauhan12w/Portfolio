@@ -19,9 +19,9 @@ const sections = [
 ];
 
 const projectLinks = [
-    { name: 'ProjectOne', to: '/projects#project-one', icon: <FaProjectDiagram /> },
-    { name: 'ProjectTwo', to: '/projects#project-two', icon: <FaProjectDiagram /> },
-    { name: 'ProjectThree', to: '/projects#project-three', icon: <FaProjectDiagram /> },
+    { name: 'Swomato', to: '/projects#project-one', icon: <FaProjectDiagram /> },
+    { name: 'MediConnect', to: '/projects#project-two', icon: <FaProjectDiagram /> },
+    { name: 'SafeGuard', to: '/projects#project-three', icon: <FaProjectDiagram /> },
 ];
 
 const Sidebar = () => {

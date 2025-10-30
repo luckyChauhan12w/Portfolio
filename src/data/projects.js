@@ -6,7 +6,7 @@ const projects = [
         image:
             "https://ik.imagekit.io/gaxmekqtag/Resume%20File/Screenshot%20(12).png",
         github: "https://github.com/luckyChauhan12w/Swomato",
-        demo: "https://swomato-demo.com",
+        demo: "https://swomato-1.onrender.com/",
         disabled: false,
         techStack: ["React.js", "Node.js", "Express", "MongoDB"],
     },
