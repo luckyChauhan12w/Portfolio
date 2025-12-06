@@ -1,16 +1,142 @@
-# React + Vite
+# 💼 Lucky Chauhan - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website built with React, Vite, and Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌙 **Dark Mode** - Toggle between light and dark themes with persistent storage
+- ⚡ **Fast Performance** - Built with Vite for lightning-fast development
+- 🎨 **Modern UI** - Tailwind CSS v4 for beautiful, responsive design
+- 🔄 **Smooth Transitions** - Framer Motion for elegant animations
+- 📱 **Responsive** - Works seamlessly on all devices
+- 🧭 **SPA Routing** - React Router for smooth page navigation
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+```bash
+node >= 14.x
+npm >= 6.x
+```
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+```bash
+git clone https://github.com/luckyChauhan12w/Portfolio.git
+cd Portfolio
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Run development server
+```bash
+npm run dev
+```
+
+4. Build for production
+```bash
+npm run build
+```
+
+## 🌙 Dark Mode Implementation
+
+The dark mode feature is implemented using:
+- **Context API** for global theme state
+- **localStorage** for theme persistence
+- **Tailwind CSS dark mode** with class strategy
+- **Smooth transitions** for theme switching
+
+### Usage
+```jsx
+import { useTheme } from './context/ThemeContext';
+
+function Component() {
+  const { theme, toggleTheme, isDark } = useTheme();
+  return (
+    <button onClick={toggleTheme}>
+      {isDark ? 'Light Mode' : 'Dark Mode'}
+    </button>
+  );
+}
+```
+
+## 🛠️ Tech Stack
+
+- **React 19** - UI library
+- **Vite** - Build tool
+- **Tailwind CSS v4** - Styling
+- **Framer Motion** - Animations
+- **React Router** - Navigation
+- **React Icons** - Icon library
+
+## 📁 Project Structure
+
+```
+Portfolio/
+├── src/
+│   ├── components/      # Reusable components
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── ThemeToggle.jsx
+│   ├── context/         # React Context
+│   │   └── ThemeContext.jsx
+│   ├── pages/           # Page components
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Experience.jsx
+│   │   └── Contact.jsx
+│   ├── data/            # Static data
+│   ├── assets/          # Images, icons
+│   ├── App.jsx          # Main app component
+│   ├── main.jsx         # Entry point
+│   └── index.css        # Global styles
+├── public/
+└── package.json
+```
+
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🎨 Customization
+
+### Adding Dark Mode to Components
+
+Use Tailwind's `dark:` prefix for dark mode styles:
+
+```jsx
+<div className="bg-white dark:bg-gray-900 text-black dark:text-white">
+  Content here
+</div>
+```
+
+### Theme Colors
+
+Dark mode uses Tailwind's gray color palette:
+- Background: `gray-900`
+- Text: `white`
+- Borders: `gray-700`
+- Hover states: `gray-800`
+
+## 👨‍💻 Author
+
+**Lucky Chauhan**
+- GitHub: [@luckyChauhan12w](https://github.com/luckyChauhan12w)
+- LinkedIn: [Lucky Chauhan](https://www.linkedin.com/in/luckychauhandev/)
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Made with ❤️ by Lucky Chauhan**
