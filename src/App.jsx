@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className=" bg-white text-black font-sans">
+      <div className="bg-white dark:bg-gray-900 text-black dark:text-white font-sans min-h-screen transition-colors duration-200">
         <Navbar />
         <Sidebar />
         <main className="p-3 ml-50 mt-18">
